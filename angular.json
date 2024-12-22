@@ -26,12 +26,17 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "baseHref": "/"
           },
           "configurations": {
             "production": {
               "outputHashing": "all",
-              "serviceWorker": true
+              "serviceWorker": true,
+              "baseHref": "/ebird-app/",
+              "optimization": true,
+              "sourceMap": false,
+              "extractLicenses": true
             },
             "development": {
               "optimization": false,
