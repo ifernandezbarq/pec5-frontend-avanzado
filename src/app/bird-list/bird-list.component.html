@@ -1,0 +1,13 @@
+<div class="bird-list">
+    <h1>Lista de Aves</h1>
+  
+    <ul>
+      <li *ngFor="let bird of birds">
+        <h3>{{ bird.comName }}</h3>
+        <p>{{ bird.sciName }}</p>
+        <p><strong>Ubicación:</strong> {{ bird.locName }}</p>
+        <img *ngIf="bird.media && bird.media[0]" [src]="bird.media[0].url" alt="{{ bird.comName }}" />
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,7 @@
+<div class="image-list">
+    <div *ngFor="let image of images" class="image-item">
+      <img [src]="image.download_url" [alt]="image.author" (click)="navigateToDetail(image.id)">
+      <p>{{ image.author }}</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,8 @@
+<p>bird-grid works!</p>
+<div class="grid">
+    <div class="grid-item" *ngFor="let bird of birds" (click)="goToDetail(bird.speciesCode)">
+      <!-- Aquí va el contenido de cada celda de la cuadrícula, como la imagen y el nombre de la especie -->
+      <img *ngIf="bird.media && bird.media[0]" [src]="bird.media[0].url" alt="{{ bird.comName }}" />
+      <h4>{{ bird.comName }}</h4>
+    </div>
+  </div>

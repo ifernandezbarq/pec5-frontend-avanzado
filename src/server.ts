@@ -14,6 +14,11 @@ const browserDistFolder = resolve(serverDistFolder, '../browser');
 const app = express();
 const angularApp = new AngularNodeAppEngine();
 
+app.use(
+  '/assets/icons',
+  express.static(resolve(browserDistFolder, 'assets/icons'), { maxAge: '1y' })
+);
+
 /**
  * Example Express Rest API endpoints can be defined here.
  * Uncomment and define endpoints as necessary.
