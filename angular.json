@@ -33,7 +33,7 @@
             "production": {
               "outputHashing": "all",
               "serviceWorker": true,
-              "baseHref": "/ebird-app/",
+              "baseHref": "/",
               "optimization": true,
               "sourceMap": false,
               "extractLicenses": true
